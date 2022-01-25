@@ -1,0 +1,17 @@
+{
+  "name": "Execute js",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "matches": [
+      "https://skribbl.io/*"
+    ],
+    "js": [
+      "content.js"
+    ]
+  }],
+  "web_accessible_resources": [
+    "example.js",
+    "words/words.json"
+  ]
+}
